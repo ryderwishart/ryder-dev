@@ -1,7 +1,7 @@
 ---
 title: Why a Gatsby Blog?
 date: "2020-01-30T08:20:03.284Z"
-description: "Why does this blog exist, what does it contribute, ?"
+description: "Why does this blog exist, what will you find here, and what do you get out of it?"
 ---
 ## What is this Blog?
 
