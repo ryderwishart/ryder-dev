@@ -1,7 +1,7 @@
 ---
 title: Why a Gatsby Blog?
 date: "2020-01-30T08:20:03.284Z"
-description: "Why a Gatsby Blog?"
+description: "Why does this blog exist, what does it contribute, ?"
 ---
 ## What is this Blog?
 
@@ -54,3 +54,13 @@ If this is true, Chris Pine, then I'll make an excellent developer, because doin
 >"The only way to learn a new programming language is by writing programs in it.” _- Dennis Ritchie_
 
 I'm going to put this learning method into practice.
+
+## What do you get out of this blog?
+
+This blog tells you how a PhD student in the humanities can get a job as a developer.
+
+I'm coming at this task with some basic Python experience (I write scripts using machine learning and natural language processing libraries for my research). I've used Git/Bitbucket a fair bit (only through the command line). And I've deployed a couple of Gatsby sites using templates (more on that some other time). 
+
+If you want to change career paths and become a developer—perhaps you're just a PhD student like me who needs to pay the bills—then this blog will show you a path that worked.
+
+Right now it's impossible to subscribe to this blog in any way, but I'll add that functionality soon. For now you can simply email me at **ryder at ryderwishart dot com**.
