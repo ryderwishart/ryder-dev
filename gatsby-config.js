@@ -9,7 +9,17 @@ module.exports = {
       instagram: `ryder.wishart`,
     },
   },
-  plugins: [
+  plugins: [ 
+    {
+      resolve: "gatsby-plugin-tinacms",
+      options: {
+        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark", "gatsby-tinacms-json",],
+        sidebar: {
+          hidden: process.env.NODE_ENV === "production",
+          position: "displace"
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
