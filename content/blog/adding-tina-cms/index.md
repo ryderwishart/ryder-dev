@@ -8,7 +8,7 @@ description: "How I added TinaCMS to my Gatsby starter blog for faster creation 
 
 I did manage to add TinaCMS to my Gatsby site, and I couldn't be happier! But it took me longer than I thought, because I'm a rookie.
 
-If you want to skip to the good part, jump down to [Starting Over](#starting-over). **********fix link
+All I can say is **when in doubt, reverse engineer something that works!**
 
 ## How to add TinaCMS to your Gatsby site
 
@@ -18,7 +18,7 @@ That's the claim on the [TinaCMS homepage](https://tinacms.org/).
 
 ![Tina-5-min](/tina-5-min.png)
 
-Well, I put it to the test, and, as it turns out **FINISH** 8:43
+Well, I put it to the test, and, as it turns out it took me way longer, but next time it probably *will* take 5 minutes.
 
 These are their four steps, but they only come with three bits of code:
 
@@ -42,8 +42,6 @@ module.exports = {
 
 export WithTina( Component );
 ```
-
-...And ...
 
 ## Step 1: Install the TinaCMS plugin for Gatsby using your package manager
 
@@ -221,7 +219,7 @@ I am getting a type error: `Unhandled Rejection (TypeError): e is undefined`
 
 That's it, time to start over again, and head to a working TinaCMS demo.
 
-### Step 1 of reverse engineering a working demo
+## Step 1 of reverse engineering a working demo
 
 Looking at this working [demo's config file](https://github.com/tinacms/gatsby-starter-tinacms/blob/master/gatsby-config.js), I am installing these plugins:
 
@@ -257,4 +255,10 @@ I just don't know. But if you were in my shoes, I hope this helped you.
 
 All I know is that I'm committing this right now before I break something. 😎
 
-### Step 4 of manual setup
+## Conclusion
+
+When in doubt, reverse engineer something that works.
+
+That's what I did to add Tina to my blog, and I hope you found this helpful.
+
+If you read this far, it's because you're a learner like me. If it was helpful, please share it!
