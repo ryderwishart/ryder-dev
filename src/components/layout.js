@@ -66,6 +66,10 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {` `}
+          and
+          {` `}
+          <a href="https://tinacms.org">TinaCMS</a>
         </footer>
       </div>
     )
