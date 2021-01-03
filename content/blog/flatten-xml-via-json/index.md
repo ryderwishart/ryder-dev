@@ -24,7 +24,7 @@ with open(xml_filepath) as xml_file_input:
 
 ## Flatten JSON recursively with Python
 
-I came across a nice, succinct, and effective piece of code to accomplish what I needed. Thanks [Amir Ziai]('https://towardsdatascience.com/flattening-json-objects-in-python-f5343c794b10')!
+I came across a nice, succinct, and effective piece of code to accomplish what I needed. Thanks [Amir Ziai](https://towardsdatascience.com/flattening-json-objects-in-python-f5343c794b10)!
 
 ```python
 import json
