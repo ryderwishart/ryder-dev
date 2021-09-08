@@ -1,5 +1,5 @@
 ---
-title: Fix random Error: pageNotFoundError while building Next.js app
+title: "Fix random Error: pageNotFoundError while building Next.js app"
 date: "2021-09-07"
 description: "'Build error occurred Error: Export encountered errors on following paths' shows different list of paths every time."
 ---
